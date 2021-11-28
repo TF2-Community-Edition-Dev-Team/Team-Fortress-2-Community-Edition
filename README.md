@@ -3,6 +3,10 @@ Team Fortress 2 Community-Edition
 
 This is the old Team Fortress 2 source code from February 2008 ported to Source Engine 2013. We will work on getting it up to date with the latest vesrion of TF2 along with other updates and fixes.
 
+### Discord
+Join the discord to follow development and ideas we have along with events that may happen. 
+https://discord.gg/pbpPg6gJPq
+
 ### Pull Requests
 If people want to submit pull requests to help build this out that would be greatly appreciated. 
 The formatting must remain the same as it is in the code now. If it is not it will be declined.
