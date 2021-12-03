@@ -66,7 +66,7 @@ const wchar_t *CTFTips::GetRandomTip()
 		}
 		iTip -= iClassTipCount;
 	}
-	Assert( false );	// shouldn't hit this
+	//Assert( false );	// shouldn't hit this
 	return L"";
 }
 

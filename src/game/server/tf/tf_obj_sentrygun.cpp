@@ -137,8 +137,6 @@ CObjectSentrygun::CObjectSentrygun()
 	SetMaxHealth( SENTRYGUN_MAX_HEALTH );
 	m_iHealth = SENTRYGUN_MAX_HEALTH;
 	SetType( OBJ_SENTRYGUN );
-
-	m_bFireNextFrame = false;
 }
 
 //-----------------------------------------------------------------------------
