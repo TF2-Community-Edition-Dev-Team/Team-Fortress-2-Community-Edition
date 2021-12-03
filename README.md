@@ -14,7 +14,7 @@ The formatting must remain the same as it is in the code now. If it is not it wi
 ## Dependencies
 
 ### Windows
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with [Visual Studio 2013 with Update 5](https://visualstudio.microsoft.com/vs/older-downloads/)
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with [Visual Studio 2013 with Update 5](https://visualstudio.microsoft.com/vs/older-downloads/) pack.
 
 ### macOS
 * [Xcode 5.0.2](https://developer.apple.com/downloads/more)
