@@ -14,7 +14,7 @@ The formatting must remain the same as it is in the code now. If it is not it wi
 ## Dependencies
 
 ### Windows
-* [Visual Studio 2013 with Update 5](https://visualstudio.microsoft.com/vs/older-downloads/)
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with [Visual Studio 2013 with Update 5](https://visualstudio.microsoft.com/vs/older-downloads/)
 
 ### macOS
 * [Xcode 5.0.2](https://developer.apple.com/downloads/more)
@@ -39,7 +39,7 @@ Note that the above archive is not a playable build. It does not contain binarie
 
 2. Download the assets package and extract its contents to <Steam>\steamapps\sourcemods.
 
-3. Restart Steam. "Team Fortress 2 1.0.1.8 Port" should appear in your Steam Library.
+3. Restart Steam. "Team Fortress 2 Commnunity Edition" should appear in your Steam Library.
 
 4. Put your compiled binaries into "bin" directory.
 
