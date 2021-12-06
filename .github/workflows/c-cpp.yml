@@ -16,4 +16,4 @@ jobs:
     - name: vpc
       run: ./src/createtfmodgithub.bat
     - name: build
-      run: devenv /build Debug
+      run: ./src/devenv.exe /build Debug
