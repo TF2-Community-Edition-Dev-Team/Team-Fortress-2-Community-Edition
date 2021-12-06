@@ -15,11 +15,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: vpc
       run: ./src/createtfmodgithub.bat
-    - name: configure
-      run: ./configure
-    - name: make ./src/game.sln
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: build
+      run: devenv /build Debug
