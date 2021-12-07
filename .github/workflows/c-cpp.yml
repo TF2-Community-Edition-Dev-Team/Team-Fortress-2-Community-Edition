@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: VPC
-      run: devtools\bin\vpc.exe /2013 /tf_mod +game /mksln games.sln
+      run: src/createtfmod.bat
     - name: Install
       run: '"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.com" games.sln /upgrade'
     - name: Build All
