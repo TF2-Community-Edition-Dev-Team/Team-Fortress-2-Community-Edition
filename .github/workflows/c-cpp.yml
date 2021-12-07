@@ -16,4 +16,4 @@ jobs:
     - name: vpc
       run: ./src/createtfmodgithub.bat
     - name: build
-      run: cmd cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln
+      run: cmd "cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln"
