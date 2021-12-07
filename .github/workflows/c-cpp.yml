@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Add MSBuild to Path
+      run: $env:PATH += "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild"
     - name: VPC
       run: ./src/createtfmodgithub.bat
     - name: Install
