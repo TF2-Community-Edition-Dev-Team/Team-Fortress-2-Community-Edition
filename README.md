@@ -1,3 +1,5 @@
+![Solution](https://github.com/Yuuki795/Team-Fortress-2-Community-Edition/actions/workflows/c-cpp.yml/badge.svg)
+
 Team Fortress 2 Community-Edition
 =====
 
