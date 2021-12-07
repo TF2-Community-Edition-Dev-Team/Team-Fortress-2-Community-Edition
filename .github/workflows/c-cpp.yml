@@ -16,4 +16,4 @@ jobs:
     - name: vpc
       run: ./src/createtfmodgithub.bat
     - name: build
-      run: msbuild /build Debug
+      run: C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.7.2 4.8 Tools\MSBuild.exe /build Debug
