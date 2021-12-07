@@ -15,5 +15,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: vpc
       run: ./src/createtfmodgithub.bat
+    - name: msbuild
+      run: $MSBuild = "${Env:ProgramFiles(x86)}\Microsoft Visual Studio\2019\Enterprise\MSBuild\15.0\Bin\MSBuild.exe"
     - name: build
-      run: C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.7.2 4.8 Tools\MSBuild.exe /build Debug
+      run: $MSBuild ./src/games.sln /t:Rebuild /p:Configuration=Release
