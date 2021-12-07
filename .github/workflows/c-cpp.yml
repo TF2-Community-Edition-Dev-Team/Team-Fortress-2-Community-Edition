@@ -14,15 +14,20 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: VPC
-      run: ./src/createtfmodgithub.bat
-    - name: Build mathlib
-      run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "mathlib"'
-    - name: Build Raytrace
-      run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "Raytrace"'
-    - name: Build tier1
-      run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "tier1"'
-    - name: Build vgui_controls
-      run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "vgui_controls"'
+      run: devtools\bin\vpc.exe /2013 /tf_mod +game /mksln games.sln
+    - name: Install
+      run: '"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.com" games.sln /upgrade'
+    - name: Build All
+      run: 'MsBuild.exe games.sln /p:Configuration=Release /p:Platform=Win32 /verbosity:minimal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"'
+
+    #- name: Build mathlib
+     # run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "mathlib"'
+    #- name: Build Raytrace
+     # run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "Raytrace"'
+    #- name: Build tier1
+     # run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "tier1"'
+    #- name: Build vgui_controls
+     # run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "vgui_controls"'
     - name: Build Client
       run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "Client (TF)"'
     - name: Build Server
