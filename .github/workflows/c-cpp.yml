@@ -16,4 +16,4 @@ jobs:
     - name: vpc
       run: ./src/createtfmodgithub.bat
     - name: build
-      run: '& "C:\ProgramFiles(x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\15.0\Bin\MSBuild.exe games.sln"'
+      run: '& "C:\Program Files(x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\15.0\Bin\MSBuild.exe" games.sln'
