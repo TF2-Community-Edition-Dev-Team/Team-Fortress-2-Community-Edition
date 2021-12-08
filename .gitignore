@@ -55,3 +55,8 @@ config.cfg
 
 # shader files
 *.tmp
+
+#Codespaces
+.devcontainer/
+.venv/
+.vscode/
