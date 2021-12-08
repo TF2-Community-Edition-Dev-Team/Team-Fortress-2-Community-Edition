@@ -1,8 +1,9 @@
-//====== Copyright © 1996-2005, Valve Corporation, All rights reserved. =======//
+//====== Copyright Â© 1996-2005, Valve Corporation, All rights reserved. =======//
 //
 // Purpose: 
 //
 //=============================================================================//
+sffsf qgsv
 #include "cbase.h"
 #include "c_baseanimating.h"
 #include "engine/ivdebugoverlay.h"
