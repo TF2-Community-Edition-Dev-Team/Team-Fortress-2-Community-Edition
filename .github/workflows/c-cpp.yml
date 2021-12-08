@@ -16,9 +16,9 @@ jobs:
     - name: VPC
       run: ./src/createtfmodgithub.bat
     - name: Install
-      run: '"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.com games.sln /upgrade"'
+      run: ./workflow/install.bat
     - name: Build All
-      run: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\MsBuild.exe games.sln /p:Configuration=Release /p:Platform=Win32 /verbosity:minimal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"'
+      run: ./workflow/build.bat
 
     #- name: Build mathlib
      # run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "mathlib"'
