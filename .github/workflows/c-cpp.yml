@@ -12,6 +12,8 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    - name: VS2013
+      run: choco install visualstudiocommunity2013
     - uses: actions/checkout@v2
     - name: VPC
       run: ./src/createtfmodgithub.bat
