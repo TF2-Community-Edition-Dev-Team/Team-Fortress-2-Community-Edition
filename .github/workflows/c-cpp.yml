@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: VS2013
-      run: choco install visualstudiocommunity2013
+      run: choco install microsoft-build-tools-2013
     - uses: actions/checkout@v2
     - name: VPC
       run: ./src/createtfmodgithub.bat
