@@ -20,7 +20,7 @@ jobs:
     - name: Install
       run: '"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.com games.sln /upgrade"'
     - name: Build All
-      run: 'MsBuild.exe games.sln /p:Configuration=Release /p:Platform=Win32 /verbosity:minimal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"'
+      run: 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\MsBuild.exe games.sln /p:Configuration=Release /p:Platform=Win32 /verbosity:minimal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"'
 
     #- name: Build mathlib
      # run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "mathlib"'
