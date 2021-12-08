@@ -15,22 +15,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: VPC
       run: ./src/createtfmodgithub.bat
-    #- name: Install
-     # shell: cmd
-      #run: 'cd src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.exe" games.sln /upgrade'
+    - name: Install
+      shell: cmd
+      run: 'cd src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.exe" games.sln /upgrade'
     - name: Build All
       shell: cmd
       run: 'cd src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\MSBuild.exe" games.sln /p:Configuration=Release /p:Platform=Win32 /verbosity:minimal'
-
-    #- name: Build mathlib
-     # run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "mathlib"'
-    #- name: Build Raytrace
-     # run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "Raytrace"'
-    #- name: Build tier1
-     # run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "tier1"'
-    #- name: Build vgui_controls
-     # run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "vgui_controls"'
-    #- name: Build Client
-     # run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "Client (TF)"'
-    #- name: Build Server
-     # run: cmd 'cd C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE && devenv.exe "D:\a\Team-Fortress-2-Community-Edition\Team-Fortress-2-Community-Edition\src\games.sln" /build Release /project "Server (TF)"'
