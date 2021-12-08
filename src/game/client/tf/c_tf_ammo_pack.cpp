@@ -3,7 +3,6 @@
 // Purpose: 
 //
 //=============================================================================//
-sffsf qgsv
 #include "cbase.h"
 #include "c_baseanimating.h"
 #include "engine/ivdebugoverlay.h"
