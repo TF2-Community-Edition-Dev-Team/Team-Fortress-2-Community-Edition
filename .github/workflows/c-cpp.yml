@@ -20,6 +20,8 @@ jobs:
     - name: Upgrade
       shell: cmd
       run: 'cd src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.exe" games.sln /upgrade'
+    - name: Clean
+      run: 'cd src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\MSBuild.exe" games.sln /t:Clean /p:Configuration=Release /verbosity:normal'
     - name: Build All
       shell: cmd
-      run: 'cd src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\MSBuild.exe" games.sln /p:Configuration=Release /verbosity:minimal'
+      run: 'cd src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\MSBuild.exe" games.sln /p:Configuration=Release /verbosity:normal'
