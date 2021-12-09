@@ -25,4 +25,4 @@ jobs:
       #run: 'cd src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\MSBuild.exe" games.sln /t:Clean /p:Configuration=Release /verbosity:normal'
     - name: Build All
       shell: cmd
-      run: 'cd src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\MSBuild.exe" games.sln /p:Configuration=Release /verbosity:normal'
+      run: 'cd src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\MSBuild.exe" games.sln /p:Configuration=Release /verbosity:detailed'
